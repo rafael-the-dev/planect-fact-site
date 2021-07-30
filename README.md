@@ -8,4 +8,4 @@ The user can:
   View each planet page and toggle between the "Overview", "Internal Structure", and "Surface Geology" tabs
 
 the app is live now on
-https://pro-planect-fact-site.netlify.app
+https://pro-planets-fact-site.netlify.app
