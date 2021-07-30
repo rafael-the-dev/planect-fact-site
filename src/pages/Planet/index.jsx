@@ -20,6 +20,7 @@ const Planet = () => {
     const contentDivision = useRef(null);
     const navigationRef = useRef(null);
     const buttonsContainer = useRef(null);
+    const menuButtonRef = useRef(null);
 
     const menuButtonClickHandler = event => {
         navigationRef.current.classList.toggle('header__navigation--mobile');
@@ -104,6 +105,10 @@ const Planet = () => {
             })
         };
         
+        const navigation = navigationRef.current;
+        const main = mainRef.current;
+        const menuButton = menuButtonRef.current;
+
         return () => {
             const name = planet.name;
             const planetName = name ? name.toLowerCase() : '';
@@ -114,6 +119,10 @@ const Planet = () => {
             document.querySelectorAll('button').forEach(item => {
                 item.classList.remove(`button--${planetName}`);
             });
+
+            navigation.classList.remove('header__navigation--mobile');
+            main.classList.remove('menu-opened');
+            menuButton.classList.remove('opacity-5');
         }
 
     }, [ id, history, planet ]);
@@ -131,7 +140,7 @@ const Planet = () => {
                         className="uppercase text-white decoration-none font-weight-7 header__logo" >
                         The planets
                     </Link>
-                    <button className="fas fa-bars text-white outline-none border-none 
+                    <button ref={menuButtonRef} className="fas fa-bars text-white outline-none border-none 
                     bg-transparent d-none-sm header__menu-button" onClick={menuButtonClickHandler}></button>
                 </div>
                 <nav ref={navigationRef} className="d-none d-flex-sm absolute w-100 px-5 header__navigation">
