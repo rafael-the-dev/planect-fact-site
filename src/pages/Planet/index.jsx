@@ -201,7 +201,7 @@ const Planet = () => {
                         </div>
                     </div>
                 </section>
-                <section className="align-stretch flex flex-column flex-row-sm justify-between py-2 px-5 w-100">
+                <section className="align-stretch flex flex-column flex-row-sm justify-between py-2 px-5 w-100 information">
                     <Info label="Rotation time" value={planet.rotation} />
                     <Info label="Revolution time" value={planet.revolution} />
                     <Info label="Radius" value={planet.radius} />

@@ -42,3 +42,16 @@
         font-size: 1.3rem;
     }
 }
+
+@media screen and (min-width: 1601px) {
+   
+
+    .info__title {
+        font-size: .9rem;
+    }
+
+    .info__description {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}

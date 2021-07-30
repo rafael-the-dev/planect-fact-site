@@ -236,3 +236,28 @@
         width: 25%;
      }
  }
+
+ @media screen and (min-width: 1601px) {
+    .content__description {
+        font-size: 1.05rem;
+        line-height: 1.7rem;
+    }
+
+    .content__source {
+        font-size: 1rem;
+    }
+
+    .buttons-container {
+        margin-top: 3rem;
+    }
+
+    .information {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1780px) {
+    .content {
+        padding-top: 5rem;
+    }
+}

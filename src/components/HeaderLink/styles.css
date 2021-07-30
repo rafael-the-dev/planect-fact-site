@@ -122,45 +122,46 @@
 
 @media screen and (min-width: 992px) {
     .header__link {
-        border-top: 3px solid transparent;
+        border-top: 4px solid transparent;
+        margin-left: 14px;
         padding-bottom: 1.4rem;
         padding-top: 1.4rem;
     }
 
     .header__link:hover {
-        border-top: 3px solid #979797de !important;
+        border-top: 4px solid #979797de !important;
         color: #979797de;
     }
 
     .link--mercury {
-       border-top: 3px solid #419EBB !important;
+       border-top: 4px solid #419EBB !important;
     }
 
     .link--mars {
-       border-top: 3px solid #D14C32 !important;
+       border-top: 4px solid #D14C32 !important;
     }
 
     .link--neptune {
-       border-top: 3px solid #2D68F0 !important;
+       border-top: 4px solid #2D68F0 !important;
     }
     
     .link--jupiter {
-       border-top: 3px solid #D83A34 !important;
+       border-top: 4px solid #D83A34 !important;
     }
 
     .link--venus {
-       border-top: 3px solid #EDA249 !important;
+       border-top: 4px solid #EDA249 !important;
     }
 
     .link--uranus {
-       border-top: 3px solid #1ec2a4 !important;
+       border-top: 4px solid #1ec2a4 !important;
     }
 
     .link--earth {
-       border-top: 3px solid #6D2ED5 !important;
+       border-top: 4px solid #6D2ED5 !important;
     }
 
     .link--saturn {
-       border-top: 3px solid #CD5120 !important;
+       border-top: 4px solid #CD5120 !important;
     }
 }
