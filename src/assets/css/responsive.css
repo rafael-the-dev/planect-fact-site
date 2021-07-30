@@ -1,0 +1,127 @@
+@media screen and (min-width: 610px) {
+    .align-start-sm {
+        align-items: flex-start;
+    }
+
+    .align-center-sm {
+        align-items: center;
+    }
+
+    .align-stretch-sm {
+        align-items: stretch;
+    }
+
+
+    .d-block-tablet {
+        display: block;
+    }
+
+    .d-flex-tablet {
+        display: flex;
+    }
+
+    .d-flex-sm {
+        display: flex;
+    }
+
+    .d-none-tablet {
+        display: none;
+    }
+
+    .d-none-sm {
+        display: none;
+    }
+
+    .flex-row-sm {
+        flex-direction: row;
+    }
+
+    .flex-column-sm {
+        flex-direction: column;
+    }
+
+    .flex-wrap-sm {
+        flex-wrap: wrap;
+    }
+
+    .justify-center-sm {
+        justify-content: center;
+    }
+
+    .justify-between-sm {
+        justify-content: space-between;
+    }
+
+    .judtify-between-tablet {
+        justify-content: space-between;
+    }
+
+    .judtify-center-tablet {
+        justify-content: center;
+    }
+
+    .judtify-start-tablet {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .align-start-desktop {
+        align-items: flex-start;
+    }
+
+    .align-start-md {
+        align-items: flex-start;
+    }
+
+    .d-flex-md {
+        display: flex;
+    }
+
+    .d-none-md {
+        display: none;
+    }
+
+    .flex-column-md {
+        flex-direction: column;
+    }
+
+    .flex-row-md {
+        flex-direction: row;
+    }
+
+    .flex-wrap-md {
+        flex-wrap: wrap;
+    }
+
+    .justify-between-md {
+        justify-content: space-between;
+    }
+
+    .justify-center-md {
+        justify-content: center;
+    }
+
+    .text-left-md {
+        text-align: left;
+    }
+
+    .px-tablet {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .px-lg {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media screen and (min-width: 1420px) {
+    .px-xl {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}

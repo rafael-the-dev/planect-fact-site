@@ -1,0 +1,166 @@
+.header__link {
+    border-bottom: 1px solid #979797de;
+    font-size: .85rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    position: relative;
+    transition: all 400ms ease;
+}
+
+.header__link:hover {
+    background-color: #38384F;
+    border-bottom: none;
+}
+
+.header__link::before {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    height: 18px;
+    margin-right: 5%;
+    width: 9%;
+}
+
+.header__link::after {
+    background-image: url('../../assets/images/icon-chevron.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    height: 10px;
+    right: 0;
+    position: absolute;
+    width: 15px;
+}
+
+.header__link--mercury::before {
+    background-image: url('../../assets/images/planet-mercury.svg');
+}
+
+.header__link--venus::before {
+    background-image: url('../../assets/images/planet-venus.svg');
+}
+
+.header__link--earth::before {
+    background-image: url('../../assets/images/planet-earth.svg');
+}
+
+.header__link--mars::before {
+    background-image: url('../../assets/images/planet-mars.svg');
+}
+
+.header__link--jupiter::before {
+    background-image: url('../../assets/images/planet-jupiter.svg');
+}
+
+.header__link--saturn::before {
+    background-image: url('../../assets/images/planet-saturn.svg');
+}
+
+.header__link--uranus::before {
+    background-image: url('../../assets/images/planet-uranus.svg');
+}
+
+.header__link--neptune::before {
+    background-image: url('../../assets/images/planet-neptune.svg');
+}
+
+@media screen and (min-width: 610px) {
+    .header__link {
+        border-bottom: none;
+        font-size: .85rem;
+        margin-left: 10px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .header__link:hover {
+        background-color: transparent;
+        border-bottom: none;
+        color: #979797de;
+    }
+
+    .header__link::before, .header__link::after {
+        display: none;
+    }
+
+    .link--mercury {
+       color: #419EBB !important;
+    }
+
+    .link--mars {
+       color: #D14C32 !important;
+    }
+
+    .link--neptune {
+       color: #2D68F0 !important;
+    }
+    
+    .link--jupiter {
+       color: #D83A34 !important;
+    }
+
+    .link--venus {
+       color: #EDA249 !important;
+    }
+
+    .link--uranus {
+       color: #1ec2a4 !important;
+    }
+
+    .link--earth {
+       color: #6D2ED5 !important;
+    }
+
+    .link--saturn {
+       color: #CD5120 !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header__link {
+        border-top: 3px solid transparent;
+        padding-bottom: 1.4rem;
+        padding-top: 1.4rem;
+    }
+
+    .header__link:hover {
+        border-top: 3px solid #979797de !important;
+        color: #979797de;
+    }
+
+    .link--mercury {
+       border-top: 3px solid #419EBB !important;
+    }
+
+    .link--mars {
+       border-top: 3px solid #D14C32 !important;
+    }
+
+    .link--neptune {
+       border-top: 3px solid #2D68F0 !important;
+    }
+    
+    .link--jupiter {
+       border-top: 3px solid #D83A34 !important;
+    }
+
+    .link--venus {
+       border-top: 3px solid #EDA249 !important;
+    }
+
+    .link--uranus {
+       border-top: 3px solid #1ec2a4 !important;
+    }
+
+    .link--earth {
+       border-top: 3px solid #6D2ED5 !important;
+    }
+
+    .link--saturn {
+       border-top: 3px solid #CD5120 !important;
+    }
+}

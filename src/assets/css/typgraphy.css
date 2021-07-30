@@ -1,0 +1,23 @@
+.decoration-none {
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-white {
+    color: #fff;
+}

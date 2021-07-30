@@ -1,0 +1,238 @@
+.header {
+    border-bottom: 1px solid #979797;
+    background: #070724;
+}
+
+.header__logo {
+    font-size: 1.25rem;
+}
+
+.header__logo:hover {
+    color: #979797de;
+}
+
+.header__menu-button {
+    height: 30px;
+    font-size: 1.1rem;
+    width: 40px;
+}
+
+.header__navigation {
+    background: #070724;
+    left: 0;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    transition: all 1s ease-in-out;
+    top: 63px;
+    z-index: 10;
+}
+
+.header__navigation--mobile {
+    box-shadow: 0 7px 28px #000000cf;
+    display: block !important;
+}
+
+.header__item:last-child .header__link{
+    border-bottom: none;
+}
+
+.menu-opened {
+    background-color: #000 !important;
+    opacity: .5;
+}
+
+.main {
+    background: #070724;
+    background-image: url('../../assets/images/background-stars.svg');
+    min-height: 93vh;
+    animation: mainAnimation 30s linear infinite;
+}
+
+@keyframes mainAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100px 100px;
+    }
+	100% {
+        background-position: 150px 0px;
+    }
+}
+
+.buttons-container {
+    border-bottom: 1px solid #979797;
+}
+
+.content__image-container {
+    height: 153px;
+    margin-top: 3rem;
+    width: 40%;
+}
+
+.animation  {
+    transform: rotateY(45deg);
+	animation: rotateAnimation 10s linear infinite alternate;
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
+}
+
+.geology-image {
+    bottom: -54px;
+    position: absolute;
+    width: 70%;
+    height: 69%;
+    left: 15%;
+}
+
+.geology-image--display {
+    display: block !important;
+}
+
+.content__title {
+    font-size: 2rem;
+}
+
+.content__division {
+    margin-top: 4rem;
+}
+
+.content__description {
+    font-size: .9rem;
+    line-height: 1.4rem;
+    margin-top: 1.1rem;
+}
+
+.content__source {
+    font-size: .9rem;
+    margin-top: 1rem;
+}
+
+.content__source-link {
+    margin-left: 6px;
+}
+
+.content__source-link::after {
+    background-image: url('../../assets/images/icon-source.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+    display: inline-block;
+    margin-left: 4px;
+    height: 13px;
+    width: 15px;
+}
+
+@media screen and (min-width: 610px) {
+    .header {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+
+    .header__navigation {
+        background-color: transparent;
+        box-shadow: none;
+        left: auto;
+        margin-top: 2rem;
+        padding: 0;
+        position: relative;
+        top: 0;
+        z-index: 0;
+    }
+
+    .buttons-container {
+        border-bottom: none;
+        display: flex;
+        width: 40%;
+    }
+
+    .content__info {
+        text-align: left;
+        width: 50%;
+    }
+
+    .content__image-container {
+        height: 240px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .content__image-container {
+        width: 32%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .header__division {
+        width: auto;
+    }
+
+    .header__navigation {
+        margin-top: 0;
+        width: auto;
+    }
+    
+    .header__item:first-child .header__link{
+        padding-top: 1.4rem;
+    } 
+
+    .buttons-container {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .content {
+        padding-bottom: 4rem;
+        padding-top: 3rem;
+    }
+
+    .content__image-container {
+        height: 270px;
+        width: 30%;
+    }
+
+    .content__division {
+        margin-left: 25%;
+        margin-top: 4rem;
+        width: 35%;
+    }
+
+    .content__info {
+        width: 100%;
+    }
+
+    .content__title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+     .content__image-container {
+        width: 24%;
+     }
+
+     .content__division {
+        width: 30%;
+     }
+ }
+
+ @media screen and (min-width: 1400px) {
+     .content__image-container {
+        width: 20%;
+     }
+
+     .content__division {
+        width: 25%;
+     }
+ }
